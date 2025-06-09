@@ -45,7 +45,7 @@ body {
 }
 
 .logo {
-  max-height: 50px;
+  max-height: 75px;
 }
 
 .main-nav ul {
@@ -123,7 +123,7 @@ body {
 }
 
 .hero-icon {
-  max-width: 300px;
+  max-width: 450px;
   height: auto;
   animation: fadeInRight 1.2s ease-out;
 }
@@ -209,19 +209,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
 .benefits-image {
-  flex: 1 1 300px;
+  flex: 1 1 260px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  max-height: 100%;
 }
 
 .benefits-image img {
+  width: auto;
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
+  max-height: 220px; /* Aumenta desde 150px anterior */
+  object-fit: contain;
 }
 
 .benefits-list {
@@ -414,7 +419,7 @@ body {
   color: #002c3e;
   border-radius: 15px;
   padding: 2rem;
-  flex: 1 1 300px;
+  flex: 1 1 450px;
   max-width: 500px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   text-align: center;
@@ -423,7 +428,7 @@ body {
 
 .testimonial-icon {
   width: 40px;
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
 }
 
 .testimonial-card blockquote {
@@ -448,7 +453,7 @@ body {
   background-color: rgba(0, 44, 62, 0.9);
   border-radius: 15px;
   padding: 2rem;
-  flex: 1 1 300px;
+  flex: 1 1 450px;
   max-width: 500px;
   color: #ffffff;
   text-align: left;
@@ -646,7 +651,7 @@ body {
   border-radius: 12px;
   padding: 1.5rem;
   flex: 1 1 260px;
-  max-width: 300px;
+  max-width: 450px;
   display: flex;
   gap: 1rem;
   align-items: flex-start;
@@ -879,4 +884,203 @@ body {
   .footer-column h4 {
     margin-top: 1rem;
   }
+}
+/* =================== Modal =================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 44, 62, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeInModal 0.3s ease-out forwards;
+}
+
+.modal-content {
+  background: #ffffff;
+  color: #002c3e;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: slideUpModal 0.4s ease-out;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.modal-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.modal-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.modal-features li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modal-features li::before {
+  content: "✔";
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #002c3e;
+  cursor: pointer;
+}
+
+.modal-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Animaciones */
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpModal {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* =================== Íconos SVG =================== */
+
+.icon {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+/* Flechas y crecimiento */
+.icon-arrow-boost {
+  width: 150px;
+  height: 150px;
+  background-image: url("assets/icons/arrowBoost.svg");
+}
+
+.icon-arrow-decreasing {
+  width: 150px;
+  height: 150px;
+  background-image: url("assets/icons/arrowDecreasing.svg");
+}
+
+.icon-arrow-graph-boost {
+  width: 450px;
+  height: 450px;
+  background-image: url("assets/icons/arrowGraphBoost.svg");
+}
+
+/* Check para listas */
+.icon-check {
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  background-image: url("assets/icons/check.svg");
+}
+
+/* Íconos generales */
+
+.icon-call {
+  width: 120px;
+  height: 120px;
+  background-image: url("assets/icons/call.svg");
+}
+
+.icon-comments {
+  background-image: url("assets/icons/comments.svg");
+}
+
+.icon-mail {
+  width: 120px;
+  height: 120px;
+  background-image: url("assets/icons/mail.svg");
+}
+
+/* Personas y cabeza */
+.icon-person {
+  background-image: url("assets/icons/person.svg");
+}
+
+.icon-person-no-font {
+  background-image: url("assets/icons/personNoFont.svg");
+}
+
+.icon-human-head-thinking {
+  width: 100px;
+  height: 100px;
+  background-image: url("assets/icons/humanHeadThinking.svg");
+}
+
+/* Conceptos visuales */
+.icon-flower-petals {
+  background-image: url("assets/icons/flowerPetals.svg");
+}
+
+.icon-mountain-flag {
+  width: 100px;
+  height: 100px;
+  background-image: url("assets/icons/mountainFlag.svg");
+}
+
+.icon-quotes {
+  width: 100px;
+  height: 100px;
+  background-image: url("assets/icons/quotes.svg");
+}
+
+.icon-ringing-bell {
+  background-image: url("assets/icons/ringingBell.svg");
+}
+
+.icon-team-development {
+  width: 100px;
+  height: 100px;
+  background-image: url("assets/icons/teamDevelopment.svg");
 }

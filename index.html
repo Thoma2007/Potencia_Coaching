@@ -9,12 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-container">
-        <!-- Aquí va el logo principal -->
-        <img src="" alt="Logo Potencia Coaching" class="logo" />
+        <img
+          src="assets/images/logos/PotenciaCoaching-VerticalBanner-noBG.png"
+          alt="Logo Potencia Coaching"
+          class="logo"
+        />
         <nav class="main-nav">
           <ul>
             <li><a href="#inicio">Inicio</a></li>
@@ -22,7 +26,7 @@
             <li><a href="#testimonios">Testimonios</a></li>
           </ul>
         </nav>
-        <a href="#contacto" class="btn-contactar">Contactar</a>
+        <a href="#contacto" class="btn-contactar">Contacto</a>
       </div>
     </header>
 
@@ -39,8 +43,10 @@
               >Reserva una sesión inicial gratuita</a
             >
           </div>
-          <!-- Aquí va el icono de la gráfica ascendente -->
-          <img src="" alt="Icono crecimiento" class="hero-icon" />
+          <div
+            class="hero-icon icon icon-arrow-graph-boost"
+            aria-hidden="true"
+          ></div>
         </div>
       </section>
       <section class="benefits-section">
@@ -48,27 +54,26 @@
           <h2 class="section-title">Beneficios clave</h2>
           <div class="benefits-content">
             <div class="benefits-image">
-              <!-- Aquí va la imagen de la mujer con la gráfica ascendente -->
               <img
-                src="ruta/de/la/imagen-beneficios.png"
+                src="assets/images/benefits.png"
                 alt="Ilustración beneficios clave"
               />
             </div>
             <ul class="benefits-list">
               <li>
-                <span class="check-icon">✔</span> Mejora del rendimiento y la
-                productividad
+                <span class="icon icon-check"></span> Mejora del rendimiento y
+                la productividad
               </li>
               <li>
-                <span class="check-icon">✔</span> Liderazgo consciente para
+                <span class="icon icon-check"></span> Liderazgo consciente para
                 tiempos de cambio
               </li>
               <li>
-                <span class="check-icon">✔</span> Equipos más colaborativos y
-                resilientes
+                <span class="icon icon-check"></span> Equipos más colaborativos
+                y resilientes
               </li>
               <li>
-                <span class="check-icon">✔</span> Acompañamiento emocional
+                <span class="icon icon-check"></span> Acompañamiento emocional
                 durante transiciones laborales
               </li>
             </ul>
@@ -80,62 +85,79 @@
           <h2 class="section-title">Servicios en Destacado</h2>
           <div class="services-grid">
             <div class="service-card">
-              <!-- Aquí va el ícono de cabeza con objetivo -->
-              <img
-                src="ruta/icono-cabeza.png"
-                alt="Coaching Personal"
-                class="service-icon"
-              />
+              <div class="service-icon icon icon-human-head-thinking"></div>
+
               <h3>Coaching Personal para Profesionales</h3>
               <p>
                 Desarrollo de habilidades blandas, inteligencia emocional y
                 confianza
               </p>
-              <a href="#" class="btn-outline">Ver más</a>
+              <a
+                href="#"
+                class="btn-outline"
+                data-title="Coaching Personal para Profesionales"
+                data-description="Este servicio te ayuda a desarrollar habilidades blandas, mejorar tu inteligencia emocional y alcanzar mayor claridad en tu desarrollo profesional."
+                data-features="Confianza personal,Herramientas prácticas,Sesiones 1 a 1"
+                data-icon="comments"
+              >
+                Ver más
+              </a>
             </div>
 
             <div class="service-card featured">
-              <!-- Aquí va el ícono de flecha ascendente -->
-              <img
-                src="ruta/icono-ejecutivo.png"
-                alt="Coaching Ejecutivo"
-                class="service-icon"
-              />
+              <div class="service-icon icon icon-arrow-boost"></div>
               <h3>Coaching Ejecutivo</h3>
               <p>
                 Liderazgo transformacional, trabajo en equipo, y planes
                 estratégicos
               </p>
-              <a href="#" class="btn-filled">Ver más</a>
+              <a
+                href="#"
+                class="btn-outline"
+                data-title="Coaching Ejecutivo"
+                data-description="Este servicio te ayuda a desarrollar habilidades blandas, mejorar tu inteligencia emocional y alcanzar mayor claridad en tu desarrollo profesional."
+                data-features="Confianza personal,Herramientas prácticas,Sesiones 1 a 1"
+                data-icon="comments"
+              >
+                Ver más
+              </a>
             </div>
 
             <div class="service-card">
-              <!-- Aquí va el ícono de bandera -->
-              <img
-                src="ruta/icono-carrera.png"
-                alt="Coaching de Carrera"
-                class="service-icon"
-              />
+              <div class="service-icon icon icon-mountain-flag"></div>
               <h3>Coaching de Carrera</h3>
               <p>
                 Acompaña a las personas en la gestión de su trayectoria personal
               </p>
-              <a href="#" class="btn-outline">Ver más</a>
+              <a
+                href="#"
+                class="btn-outline"
+                data-title="Coaching de Carrera"
+                data-description="Este servicio te ayuda a desarrollar habilidades blandas, mejorar tu inteligencia emocional y alcanzar mayor claridad en tu desarrollo profesional."
+                data-features="Confianza personal,Herramientas prácticas,Sesiones 1 a 1"
+                data-icon="comments"
+              >
+                Ver más
+              </a>
             </div>
 
             <div class="service-card">
-              <!-- Aquí va el ícono de equipo -->
-              <img
-                src="ruta/icono-equipos.png"
-                alt="Coaching para Equipos"
-                class="service-icon"
-              />
+              <div class="service-icon icon icon-team-development"></div>
               <h3>Coaching para Equipos</h3>
               <p>
                 Facilita la comunicación y colaboración entre los miembros de tu
                 equipo
               </p>
-              <a href="#" class="btn-outline">Ver más</a>
+              <a
+                href="#"
+                class="btn-outline"
+                data-title="Coaching para Equipos"
+                data-description="Este servicio te ayuda a desarrollar habilidades blandas, mejorar tu inteligencia emocional y alcanzar mayor claridad en tu desarrollo profesional."
+                data-features="Confianza personal,Herramientas prácticas,Sesiones 1 a 1"
+                data-icon="comments"
+              >
+                Ver más
+              </a>
             </div>
           </div>
         </div>
@@ -144,14 +166,8 @@
         <div class="container-testimonials fade-in-up">
           <h2 class="section-title">Testimonios y Casos de Éxito</h2>
           <div class="testimonials-grid">
-            <!-- Testimonio -->
             <div class="testimonial-card">
-              <!-- Aquí va el ícono de comillas -->
-              <img
-                src="ruta/icono-comillas.png"
-                alt="Icono testimonio"
-                class="testimonial-icon"
-              />
+              <div class="testimonial-icon icon icon-quotes"></div>
               <blockquote>
                 “El coaching ha sido una experiencia transformadora.
                 <strong>He ganado confianza y claridad</strong> en mi rol de
@@ -167,12 +183,7 @@
                   Cómo ayudamos a Empresa X a reducir el estrés de sus líderes
                   en un 40%
                 </h3>
-                <!-- Aquí va el ícono de gráfica decreciente -->
-                <img
-                  src="ruta/icono-grafico-decreciente.png"
-                  alt="Icono gráfico"
-                  class="case-icon"
-                />
+                <div class="testimonial-icon icon icon-arrow-decreasing"></div>
               </div>
               <p class="case-description">
                 Implementamos un programa de coaching personalizado que resultó
@@ -189,51 +200,70 @@
           <h2 class="section-title">Talleres y seminarios destacados</h2>
           <div class="workshops-grid">
             <div class="workshop-card">
-              <!-- Aquí va el ícono de diálogo/comunicación -->
-              <img
-                src="ruta/icono-comunicacion.png"
-                alt="Taller de Comunicación Eficaz"
-                class="workshop-icon"
-              />
+              <div class="workshop-icon icon icon-comments"></div>
               <h3>Taller de Comunicación Eficaz</h3>
               <p>3 horas · Presencial</p>
-              <a href="#" class="btn-blue">Ver más</a>
+              <a
+                href="#"
+                class="btn-blue"
+                data-title="Taller de Comunicación Eficaz"
+                data-description="Este servicio te ayuda a desarrollar habilidades blandas, mejorar tu inteligencia emocional y alcanzar mayor claridad en tu desarrollo profesional."
+                data-features="Confianza personal,Herramientas prácticas,Sesiones 1 a 1"
+                data-icon="comments"
+              >
+                Ver más
+              </a>
             </div>
 
             <div class="workshop-card">
-              <!-- Aquí va el ícono de campana con flecha -->
-              <img
-                src="ruta/icono-conflictos.png"
-                alt="Seminario de Resolución de Conflictos"
-                class="workshop-icon"
-              />
+              <div class="workshop-icon icon icon-ringing-bell"></div>
+
               <h3>Seminario de Resolución de Conflictos</h3>
-              <p>Online</p>
-              <a href="#" class="btn-blue">Ver más</a>
+              <p>3 horas · Presencial</p>
+              <a
+                href="#"
+                class="btn-blue"
+                data-title="Seminario de Resolución de Conflictos"
+                data-description="Este servicio te ayuda a desarrollar habilidades blandas, mejorar tu inteligencia emocional y alcanzar mayor claridad en tu desarrollo profesional."
+                data-features="Confianza personal,Herramientas prácticas,Sesiones 1 a 1"
+                data-icon="comments"
+              >
+                Ver más
+              </a>
             </div>
 
             <div class="workshop-card">
-              <!-- Aquí va el ícono de flor de mindfulness -->
-              <img
-                src="ruta/icono-mindfulness.png"
-                alt="Liderazgo Mindfulness"
-                class="workshop-icon"
-              />
+              <div class="workshop-icon icon icon-flower-petals"></div>
+
               <h3>Liderazgo Consciente con Mindfulness</h3>
-              <p>Barcelona</p>
-              <a href="#" class="btn-blue">Ver más</a>
+              <p>3 horas · Presencial</p>
+              <a
+                href="#"
+                class="btn-blue"
+                data-title="Liderazgo Consciente con Mindfulness"
+                data-description="Este servicio te ayuda a desarrollar habilidades blandas, mejorar tu inteligencia emocional y alcanzar mayor claridad en tu desarrollo profesional."
+                data-features="Confianza personal,Herramientas prácticas,Sesiones 1 a 1"
+                data-icon="comments"
+              >
+                Ver más
+              </a>
             </div>
 
             <div class="workshop-card">
-              <!-- Aquí va el ícono de gráfico ascendente -->
-              <img
-                src="ruta/icono-cambio.png"
-                alt="Gestión del Cambio"
-                class="workshop-icon"
-              />
-              <h3>Gestión del Cambio</h3>
-              <p>Ver más</p>
-              <a href="#" class="btn-blue">Ver más</a>
+              <div class="workshop-icon icon icon-arrow-boost"></div>
+
+              <h3>Gestión del cambio empresarial</h3>
+              <p>3 horas · Presencial</p>
+              <a
+                href="#"
+                class="btn-blue"
+                data-title="Gestión del cambio empresarial"
+                data-description="Este servicio te ayuda a desarrollar habilidades blandas, mejorar tu inteligencia emocional y alcanzar mayor claridad en tu desarrollo profesional."
+                data-features="Confianza personal,Herramientas prácticas,Sesiones 1 a 1"
+                data-icon="comments"
+              >
+                Ver más
+              </a>
             </div>
           </div>
         </div>
@@ -248,12 +278,8 @@
 
           <div class="cta-services">
             <div class="cta-service-card">
-              <!-- Aquí va el ícono de persona -->
-              <img
-                src="ruta/icono-personal.png"
-                alt="Icono Coaching Personal"
-                class="cta-icon"
-              />
+              <div class="cta-icon icon icon-person-no-font"></div>
+
               <div>
                 <h3>Coaching Personal para Profesionales</h3>
                 <p>
@@ -264,12 +290,8 @@
             </div>
 
             <div class="cta-service-card">
-              <!-- Aquí va el ícono de equipo flecha -->
-              <img
-                src="ruta/icono-ejecutivo.png"
-                alt="Icono Coaching Ejecutivo"
-                class="cta-icon"
-              />
+              <div class="cta-icon icon icon-person"></div>
+
               <div>
                 <h3>Coaching Ejecutivo</h3>
                 <p>
@@ -280,12 +302,8 @@
             </div>
 
             <div class="cta-service-card light">
-              <!-- Aquí va el ícono de gráfico crecimiento -->
-              <img
-                src="ruta/icono-cambio.png"
-                alt="Icono Cambio"
-                class="cta-icon"
-              />
+              <div class="cta-icon icon icon-arrow-boost"></div>
+
               <div>
                 <h3>Cómo del Cambio</h3>
                 <p>Facilita la comunicación y colaboración entre los equipos</p>
@@ -319,21 +337,12 @@
 
           <div class="contact-info">
             <div class="contact-item">
-              <!-- Aquí va el ícono de teléfono -->
-              <img
-                src="ruta/icono-telefono.png"
-                alt="Teléfono"
-                class="contact-icon"
-              />
+              <div class="contact-icon icon icon-call"></div>
               <span>123–456–7890</span>
             </div>
             <div class="contact-item">
-              <!-- Aquí va el ícono de correo -->
-              <img
-                src="ruta/icono-email.png"
-                alt="Correo"
-                class="contact-icon"
-              />
+              <div class="contact-icon icon icon-mail"></div>
+
               <span>info@ejemplo.com</span>
             </div>
           </div>
@@ -343,9 +352,8 @@
     <footer class="site-footer">
       <div class="footer-container">
         <div class="footer-column logo-column">
-          <!-- Aquí va el logo principal -->
           <img
-            src="ruta/logo-footer.png"
+            src="assets/images/logos/PotenciaCoaching-VerticalBanner-noBG.png"
             alt="Logo Potencia Coaching"
             class="footer-logo"
           />
@@ -374,20 +382,45 @@
           </ul>
         </div>
 
-        <div class="footer-column">
+        <!-- <div class="footer-column">
           <h4>Mantente Conectado</h4>
           <div class="social-icons">
-            <!-- Aquí va el ícono de Facebook -->
+           
             <a href="#"><img src="ruta/icono-facebook.png" alt="Facebook" /></a>
-            <!-- Aquí va el ícono de LinkedIn -->
+            
             <a href="#"><img src="ruta/icono-linkedin.png" alt="LinkedIn" /></a>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="footer-bottom">
-        © 2024 Nombre de la Empresa. Todos los derechos reservados.
+        © 2024 Potencia Coaching. Todos los derechos reservados.
       </div>
     </footer>
+
+    <div class="modal-overlay" id="modal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Cerrar modal">
+          ×
+        </button>
+
+        <div class="modal-icon icon icon-placeholder" id="modalIcon"></div>
+
+        <h2 class="modal-title" id="modalTitle">
+          Título del Servicio o Taller
+        </h2>
+        <p class="modal-description" id="modalDescription">
+          Aquí irá una descripción del contenido seleccionado.
+        </p>
+
+        <ul class="modal-features" id="modalFeatures">
+          <!-- Lista generada dinámicamente -->
+        </ul>
+
+        <a href="#contacto" class="btn-filled"
+          >Contactar para más información</a
+        >
+      </div>
+    </div>
   </body>
 </html>
